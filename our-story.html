@@ -22,6 +22,9 @@
     <!-- LOCAL CSS -->
     <link href="css/prettyPhoto.css" rel="stylesheet">
     <link href="css/chops.css" rel="stylesheet">
+    <link href="css/chops-store.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
     
     <!-- JS CDN -->
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
@@ -52,9 +55,64 @@
     <meta name="twitter:description" content="Chops is jerky made with premium tender and moist beef brisket, crafted with all natural ingredients using a special recipe and technique. Hailing from Georgia, we combine generations of tradition and skill when crafting our products. Come check us out and join the Chops Revolution!" />
     <meta name="twitter:image" content="./images/our_products/snack-sticks/chops_pholder.jpg" />
 </head>
-
-<body id="our-story-page">
-    <div id="preloader" style="display: none;">
+<body id="products-page">    
+    <div class="modal fade" id="refill-modal" tabindex="-1" role="dialog" arialabelledby="Refill Form Modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Store Refill Request Form</h2>
+                    <p>Please fill in the following information for a refill of our delicious meat snacks.<br/><br/>For most locations, we will provide the refill in two weeks. After submitting the request, you'll receive a confirmation email that will include a specific delivery time frame. If you need a refill urgently or would like it to be delivered at a specific date, please include that information in the <b>'Additional Notes'</b> box.<br/><br/>Thank you!</p>
+                </div>
+                <div class="modal-body">
+                    <form id="refill-form" role="form" action="https://formspree.io/info@chopssnacks.com" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control" id="contact_name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone Number</label>
+                            <input type="text" name="phone" class="form-control" id="contact_phone" placeholder="1-800-CHOPS-SNACKS">
+                            <input type="text" name="_gotcha" style="display:none" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" name="_replyto" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Store Mailing Address</label>
+                            <input type="text" class="form-control" id="exampleInputAddress" name="store_address" placeholder="Enter your store's mailing address">
+                            <input type="hidden" name="_next" value="#success"/>
+                            <input type="hidden" name="_subject" value="NEW Store Refill Request!" />
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Additional Notes</label>
+                            <textarea type="text" class="feedback-input form-control refill" placeholder="Comment" id="contact_comment" name="message"></textarea>
+                        </div>
+                        <button type="submit" value="Send" class="btn btn-default contact_submit black">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Thank You!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Your refill request has been received and we will get back to you via e-mail shortly! Thank you for your patronage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader hidden" style="display: none;">
         <img src="./images/common/Preloader.gif" alt="Preloader" id="loader-gif">
     </div>
     <header>
@@ -65,6 +123,7 @@
                 </div>
                 <div class="navbar-right" id="top-nav-right">
                     <ul class="nav navbar-nav">
+                        <li class="right-nav-item top-refill"><a href="#refill-modal" data-toggle="modal" id="refill-link">Store Refill Request</a></li>
                         <li class="hidden right-nav-item top-locate"><a href="#"><img src="./images/common/locate_us.png"/></a></li>
                         <li class="right-nav-item top-social-row-list">
                             <div class="top-social-row-container hidden-xs">
@@ -94,12 +153,12 @@
                 </button>
                 <div class="collapse navbar-collapse" id="bottom-navigation-container">
                     <ul class="nav navbar-nav navbar-nav-lower">
-                        <li class=""><a href="index.html" class="">Home</a></li>
-                        <li class="current"><a href="our-story.html" class="current">Our Story <span class="sr-only">(current)</span></a></li>
-                        <li class=""><a href="our-products.html">Our Products</a></li>
+                        <li class=""><a href="index.html" class="">Home<span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="our-story.html" class="">Our Story</a></li>
+                        <li class=""><a href="chops-store.html">The Chops Store</a></li>
                         <li class=""><a href="chops-diff.html" class="">The Chops Difference</a></li>
-                        <li class=""><a href="http://shop.chopssnacks.com/">The Store</a></li>
                         <li class=""><a href="contact-us.html">Contact Us</a></li>
+                        <li class="hidden-lg hidden-md hidden-sm"><a href="#refill-modal" data-toggle="modal">Store Refill Request</a></li>
                     </ul>
                 </div>
             </div>        
@@ -221,39 +280,39 @@
     </section>
     <footer>
         <div class="container-fluid footer-bg">
-            <div class="container footer-container">
+            <div class="footer-container">
                 <div class="row footer-row">
                     <div class="col-md-8 col-sm-12 col-xs-12 footer-left">
                         <div class="footer-left-row row">
                             <div class="col-md-1 col-sm-1 col-xs-12 footer-icon-col">
-                                <a href="http://shop.chopssnacks.com/" class="footer-icon-link"><img src="./images/common/cart_icon.png" class="footer-icon"/></a>
+                                <a href="chops-store.html" class="footer-icon-link"><img src="./images/common/cart_icon.png" class="footer-icon"/></a>
                             </div>
                             <div class="col-md-11 col-sm-11 col-xs-12 footer-left-column">
                                 <a class="footer-left-link shifted" href="http://shop.chopssnacks.com/">Grab some <span class="bold">CHOPS Jerky</span> today.</a>
                             </div>
                         </div>
                         <div class="footer-left-row row">
-                            <div class="col-md-1 col-sm-1 col-xs-12 footer-icon-col">
+                            <!--<div class="col-md-1 col-sm-1 col-xs-12 footer-icon-col">
                                 <a href="index.html" class="footer-icon-link"><img src="./images/common/locate_us_maponly.png" class="footer-icon"/></a>
                             </div>
                             <div class="col-md-11 col-sm-11 col-xs-12 footer-left-column">
                                 <a class="footer-left-link shifted" href="index.html">Find some <span class="bold">CHOPS Jerky</span> near you.</a>
-                            </div>
+                            </div>-->
                         </div>
                         <div class="footer-left-row row">
                             <div class="col-md-4 col-sm-4 col-xs-12">
                                 <div class="row text-center">
-                                    <div class="col-md-4 col-sm-4 col-xs-4"><a href="https://www.facebook.com/chops.jerky/" class="footer-social-link"><img src="./images/common/facebook.png" class="footer-social-image"/></a></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4"><a href="https://twitter.com/chopssnacks" class="footer-social-link"><img src="./images/common/twitter.png" class="footer-social-image"/></a></div>
-                                    <div class="col-md-4 col-sm-4 col-xs-4"><a href="https://www.instagram.com/chopssnacks/" class="footer-social-link"><img src="./images/common/instagram.png" class="footer-social-image"/></a></div>
+                                    <div class="col-md-4 col-sm-4 col-xs-4 footer-social"><a href="https://www.facebook.com/chops.jerky/" class="footer-social-link"><img src="./images/common/facebook.png" class="footer-social-image"/></a></div>
+                                    <div class="footer-social col-md-4 col-sm-4 col-xs-4"><a href="https://twitter.com/chopssnacks" class="footer-social-link"><img src="./images/common/twitter.png" class="footer-social-image"/></a></div>
+                                    <div class="footer-social col-md-4 col-sm-4 col-xs-4"><a href="https://www.instagram.com/chopssnacks/" class="footer-social-link"><img src="./images/common/instagram.png" class="footer-social-image"/></a></div>
                                 </div>
                             </div>
-                            <div class="col-md-8 col-sm-8 col-xs-12">
+                            <div class="col-md-8 col-sm-8 col-xs-12 footer-left-column">
                                 <p class="footer-left-text">Follow us us on social media.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12 col-xs-12 footer-right text-right">
+                    <div class="col-md-4 col-sm-4 col-sm-offset-8 col-xs-12 footer-right text-right">
                         <div class="footer-right-text1-container">
                             <p class="footer-right-text1">
                                 We're always here to help:<br/>
@@ -263,9 +322,9 @@
                         </div>
                         <div class="footer-right-text2-container">
                             <p class="footer-right-text2">
-                                Copyright © 2016 Chops Snacks, LLC.<br/>
+                                <span class="hidden-sm">Copyright </span>© 2016 Chops Snacks, LLC.<br/>
                                 All rights reserved.<br/>
-                                Designed by Abhi Nayar
+                                <span class="credits">Designed by Abhi Nayar</span>
                             </p>
                         </div>
                     </div>

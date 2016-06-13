@@ -1,0 +1,474 @@
+/* Nutrition modal */
+.modal-body.nutrition {
+    text-align: center;
+}
+
+/* CHOPS STORE CSS */
+@media (min-width: 768px) {
+    .store-heading-bg {
+        background-color: #031b2c;
+        height: 120px;
+    }
+    
+    .store-heading img, .store-heading h1 {
+        display: inline-block;
+    }
+    
+    .store-heading h1 {
+        color: #fff;
+        font-family: nexabold;
+        margin-top: 50px;
+        text-transform: uppercase;
+    }
+    
+    .store-heading img:first-of-type {
+        max-width: 120px;
+        margin-top: -45px;
+    }
+    
+    .store-heading img:nth-of-type(2) {
+        max-height: 90px;
+        max-width: 220px;
+        margin-top: 40px;
+        float: right;
+    }
+    
+    .chops-store-intro p {
+        color: #fff;
+        font-size: 16px;
+        line-height: 1.8em;
+        margin-top: 40px;
+    }
+    
+    .jerky-heading h2 {
+        font-family: nexalight;
+        color: #fff;
+        font-size: 36px;
+        width: 100%;
+        border-bottom: 1px solid #fff;
+        padding-bottom: 10px;
+        margin-top: 40px;
+    }
+    
+    .jerky-comtainer {
+        background-color: #1b1919;
+    }
+    
+    #jerky-list ol {
+        display: block;
+        position: relative;
+        margin: 2.5em auto 1em auto;
+        text-align: center;
+        left: 0;
+        width: 100%;
+    }
+    
+    #jerky-list ol li {
+        display: block;
+        position: relative;
+        float: left;
+        width: 19%;
+        height: auto;
+        margin: 0.5%;
+        border: none;
+        border-radius: 0;
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+    }
+    
+    #jerky-list ol li img {
+        background-color: #fff;
+        padding: 0.5em;
+        border: 1px solid rgba(0,0,0,0.1);
+    }
+    
+    #jerky-list ol li:hover img {
+        background-color: #591b4f;
+    }
+    
+    #jerky-list ol li.active img {
+        background-color: #af001a;
+    }
+    
+    .carousel-inner .item {
+        min-height: 940px;
+    }
+    
+    .gallery-image {
+        width: 520px;
+        margin: 0 auto;
+        overflow: hidden;
+        text-align: center;
+        cursor: pointer;
+        border: 0.90em solid #fff;
+        margin-top: 1px;
+        -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-image img {
+        position: relative;
+        display: block;
+        -moz-transform: scale(1);
+        -webkit-transform: scale(1);
+        -o-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: all .35s;
+        -moz-transition: all .35s;
+        transition: all .35s;
+    }
+
+    .gallery-image:hover img {
+        position: relative;
+        opacity: 1;
+        display: block;
+        -moz-transform: scale(1.05);
+        -webkit-transform: scale(1.05);
+        -o-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+    
+    .product-info {
+        color: #fff;
+    }
+    
+    .product-info .price {
+        margin-top: 20px;
+        font-size: 22px;
+        font-family: nexalight;
+        text-align: center;
+    }
+    
+    .product-info h2 {
+        font-family: nexabold;
+        text-align: center;
+        font-size: 32px;    
+        margin-top: 10px;
+    }
+    
+    .product-info p {
+        font-family: nexalight;
+        font-size: 16px;
+        text-align: justify;
+        max-width: 550px;
+        margin: 0 auto;
+        line-height: 1.6em;
+        padding-top: 10px;
+    }
+    
+    .buy-row .buy-info {
+        font-size: 16px;
+        font-family: nexalight;
+        display: inline-block;
+        margin-left: 72px;
+        margin-top: -10px;
+    }
+    
+    .buy-row {
+        margin-top: 30px;    
+    }
+    
+    .buy-row .buy-button {
+        margin-left: 95px;
+    }
+    
+    .nutrition-link {
+        font-size: 16px;
+        margin-left: -17px;
+    }
+    
+    .snack-stick-container {
+        background-color: #af001a;
+        padding-bottom: 80px;
+    }
+    
+    .jerky-heading.snack-stick-heading {
+        margin-top: 50px;
+    }
+    
+    .snack-stick {
+        background-color: #031b2c;
+        margin-top: 50px;
+        font-size: 16px;
+        color: #fff;
+        padding-bottom: 15px;
+        min-height: 300px;
+    }
+    
+    #first.snack-stick {
+        margin-top: 25px;
+    }
+    
+    .snack-stick-desc h2 {
+        font-family: nexabold;
+        font-size: 30px;
+        margin-top: 18px;
+    }
+    
+    .snack-stick-desc p {
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 1.6em;
+    }
+    
+    .image-info img {
+        max-width: 100%;
+    }
+    
+    .image-info {
+        margin-top: 18px;
+    }
+    
+    .price-buy p {
+        text-align: center;
+        font-size: 16px;
+        font-family: nexalight;
+        margin-top: 15px;
+    }
+    
+    .price-buy .snack-buy-button {
+        text-align: center;
+        margin-left: 2.4em;
+        margin-top: -10px;
+    }
+    
+    .other-info a {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 0;
+        margin-top: 250px;
+        right: 0;
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .store-heading img:nth-of-type(2) {
+        max-height: 90px;
+        max-width: 300px;
+        margin-top: 30px;
+        float: right;
+    }
+    
+     .carousel-inner .item {
+        min-height: 430px;
+    }
+    
+    .gallery-image {
+        width: 289px;
+        max-height: 340px;
+        margin: 0 auto;
+    }
+    
+    .gallery-image img {
+        max-height: 340px;
+    }
+    
+    .product-info {
+        min-height: 365px;
+        margin-left: -25px;
+    }
+
+    .product-info h2 {
+        text-align: left;
+        font-size: 32px;
+    }
+    
+    .product-info p {
+        max-width: auto;
+        font-size: 18px;
+        text-align: left;
+    }
+    
+    .large-price {
+        color: #fff;
+        font-size: 16px;
+        font-family: nexalight;
+    }
+    
+    .large-price p {
+        margin-top: 15px;
+    }
+    
+    .large-price .buy-button {
+        margin-left: 8.2em;
+        margin-top: -10px;
+    }
+    
+    .buy-row {
+        margin-top: 0;
+    }
+    
+    .buy-row .buy-info {
+        margin-left: 0px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 130px;
+        margin-top: 345px;
+    }
+    
+    .nutrition-link {
+        font-size: 16px;
+        margin-left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-top: 345px;
+        margin-right: 15px;
+    }
+    
+    .snack-stick-desc h2 {
+        font-family: nexabold;
+        font-size: 32px;
+        margin-top: 25px;
+    }
+    
+    .snack-stick-desc p {
+        font-size: 16px;
+        margin-top: 15px;
+        line-height: 1.6em;
+        width: 95%;
+    }
+    
+    .price-buy .snack-buy-button {
+        text-align: center;
+        margin-left: 2.75em;
+        margin-top: -10px;
+    }
+    
+    .other-info a {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 0;
+        margin-top: 250px;
+        right: 0;
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .carousel-inner .item {
+        min-height: 525px;
+        margin-left: 20px;
+    }
+    
+    .gallery-image {
+        width: 378px;
+        max-height: 390px;
+        margin: 0 auto;
+    }
+    
+    .gallery-image img {
+        max-height: 382px;
+    }
+    
+    .product-info {
+        min-height: 380px;
+        margin-left: -20px;
+    }
+    
+    .product-info p {
+        max-width: 100%;
+        font-size: 18px;
+        text-align: left;
+        margin-left: 0px;
+    }
+    
+    .product-info h2 {
+        font-family: nexabold;
+        text-align: left;
+        font-size: 38px;    
+        margin-top: 15px;
+        margin-left: 0px;
+    }
+    
+    .buy-row .buy-info {
+        margin-left: 0px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 15px;
+        margin-top: 345px;
+    }
+    
+    .nutrition-link {
+        font-size: 16px;
+        margin-left: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin-top: 345px;
+        margin-left: 180px;
+    }
+    
+    .large-price {
+        color: #fff;
+        font-size: 18px;
+        font-family: nexalight;
+    }
+    
+    .large-price .buy-button {
+        margin-left: 7.5em;
+        margin-top: -10px;
+    }
+    
+    .snack-stick {
+        min-height: 310px;
+    }
+    
+    .snack-stick:nth-of-type(odd) {
+        margin-left: -10px;
+        margin-right: 10px;
+    }
+    
+    .snack-stick:nth-of-type(even) {
+        margin-right: -10px;
+        margin-left: 10px;
+    }
+    
+    #second.snack-stick {
+        margin-top: 25px;
+    }
+    
+    .snack-stick-desc h2 {
+        font-family: nexabold;
+        font-size: 30px;
+        margin-top: 25px;
+    }
+    
+    .snack-stick-desc p {
+        font-size: 16px;
+        margin-top: 12px;
+        line-height: 1.6em;
+        width: 95%;
+    }
+    
+    .other-info a {
+        display: inline-block;
+        float: right;
+        position: absolute;
+        top: 0;
+        margin-top: 255px;
+        right: 0;
+        margin-right: 40px;
+    }
+    
+    .price-buy p {
+        text-align: center;
+        font-size: 18px;
+        font-family: nexalight;
+        margin-top: 20px;
+    }
+    
+    .price-buy .snack-buy-button {
+        text-align: center;
+        margin-left: 2em;
+        margin-top: -5px;
+    }
+}

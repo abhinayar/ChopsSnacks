@@ -1,0 +1,545 @@
+/* Index */
+.item {
+    height: 100%;
+    width: 100%;
+    
+}
+
+.item.first {
+    background-image: url(../images/index/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center;
+}
+
+.item .logo-row {
+    text-align: center;
+}
+
+.item.first .index-logo {
+    max-width: 220px; 
+    margin-top: 25px;
+}
+
+.item.first .index-tagline {
+    color: #fff;
+    font-family: nexalight;
+    font-size: 26px;
+    margin-top: 20px;
+    line-height: 1.2em;
+}
+
+.arrow-down {
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+.arrow-down img {
+    max-height: 30px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 50%;
+}
+
+.carousel-indicators li, .carousel-indicators li.active {
+    height: 5px;
+    width: 5px;
+}
+
+.carousel-indicators li {
+    margin-bottom: -0.5px;
+}
+
+.index-bottom {
+    background-color: #ffba1b;
+}
+
+.index-bottom .index-bags {
+    margin-top: 40px;
+}
+
+.index-bottom .index-bags img {
+    max-height: auto;
+    width: 150%;
+    margin-left: -15px;
+}
+
+.index-bottom .index-desc {
+    text-align: center;
+}
+
+.index-bottom .index-desc h2 {
+    text-transform: uppercase;
+    font-size: 32px;
+    margin-top: 30px;
+}
+
+.index-bottom .index-desc p {
+    font-size: 14px;
+    margin-top: 20px;
+    line-height: 1.6em;
+}
+
+.index-bottom .index-guarantee {
+    background-color: #031b2c;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.index-bottom .index-guarantee p {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+@media (min-height: 550px) {
+    .item.first .index-logo {
+        margin-top: 45px;
+    }
+    
+    .item.first .index-tagline {
+        margin-top: 40px;
+    }
+    
+    .carousel-control.left, .carousel-control.right {
+        margin-top: 215px;
+    }
+}
+
+@media (min-height: 620px) {
+    .item.first .index-logo {
+        margin-top: 50px;
+    }
+    
+    .item.first .index-tagline {
+        margin-top: 50px;
+        font-size: 32px;
+    }
+    
+    .arrow-down {
+        margin-top: 20%;
+    }
+    
+    .carousel-control.left, .carousel-control.right {
+        margin-top: 260px;
+    }
+
+    .item.first .index-tagline {
+        font-size: 36px;
+    }
+    
+    .arrow-down img {
+        max-height: 40px;
+    }
+}
+
+@media (min-height: 700px) {
+    .item.first .index-logo {
+        max-width: 275px; 
+        margin-top: 30px;
+    }
+    
+    .item.first .index-tagline {
+        font-size: 42px;
+        margin-top: 60px;
+    }
+    
+    .arrow-down img {
+        max-height: 50px;
+    }
+    
+    .carousel-control.left, .carousel-control.right {
+        margin-top: 310px;
+    }
+}
+
+@media (min-width: 480px) {
+    .index-bottom .index-desc h2 {
+        font-size: 36px;
+    }
+    
+    .index-bottom .index-desc p {
+        font-size: 16px;
+        width: 90%;
+        margin:  0 auto;
+        margin-top: 20px;
+    }
+    
+    .index-bottom .index-guarantee {
+        margin-top: 25px;
+    }
+    
+    .index-bottom .index-guarantee p {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 500px) {
+    .item.first .index-logo {
+        max-width: 400px; 
+        margin-top: 30px;
+    }
+    
+    .item.first .index-tagline {
+        font-size: 52px;
+        margin-top: 70px;
+    }
+    
+    .arrow-down {
+        margin-top: 15%;
+    }
+}
+
+
+@media (min-height: 1000px) {
+    .item.first .index-logo { 
+        margin-top: 130px;
+    }
+}
+
+@media (min-width: 600px) {
+    .arrow-down {
+        margin-top: 13%;
+    }
+    
+    .item.first .index-tagline {
+        font-size: 58px;
+        margin-top: 80px;
+    }
+}
+
+@media (min-width: 768px) {
+    .item.first {
+    }
+
+    .item.first .logo-row {
+        text-align: left;
+        padding-top: 0px;
+    }
+    
+    .item.first .index-logo { 
+        display: inline-block;
+        max-width: 360px;
+        text-align: left;
+        float: left;
+        margin-left: 100px;
+    }
+    
+    .item.first .index-tagline {
+        display: inline-block;
+        font-size: 52px;
+        text-align: left;
+        float: right;
+        margin-right: 100px;
+        margin-top: 25%;
+    }
+    
+    .arrow-down {
+        margin-top: 10%;
+    }
+    
+    .index-bottom .index-bags {
+        margin-top: 45px;
+    }
+    
+    .index-bottom .index-bags img {
+        width: 150%;
+        margin-left: -130px;
+    }
+    
+    .index-bottom .index-desc {
+        margin-top: 55px;
+        text-align: left;
+    }
+    
+    .index-bottom .index-desc h2 {
+        font-size: 22px;    
+    }
+    
+    .index-bottom .index-desc p {
+        width: 100%;
+        font-size: 14px;
+    }
+    
+    .index-bottom .index-desc .shifted {
+        display: block;
+        margin-top: -15px;
+    }
+    
+    .index-bottom .index-guarantee {
+        text-align: left;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .index-bottom .index-rockies {
+        margin-top: -15px;
+    }
+    
+    .index-bottom .index-rockies img {
+        max-width: 90%;
+        float: right;
+    }
+    
+}
+
+@media (min-width: 820px) {
+    .item.first {
+    }
+
+    .item.first .index-logo { 
+        display: inline-block;
+        max-width: 380px;
+        text-align: left;
+        float: left;
+        margin-left: 90px;
+    }
+    
+    .item.first .index-tagline {
+        display: inline-block;
+        font-size: 52px;
+        text-align: left;
+        float: right;
+        margin-right: 125px;
+        margin-top: 185px;
+    }
+    
+    .index-bottom .index-desc {
+        margin-top: 50px;
+        text-align: left;
+    }
+    
+    .index-bottom .index-desc h2 {
+        font-size: 24px;    
+    }
+    
+    .index-bottom .index-desc p {
+        width: 100%;
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 900px) {
+    .item.first {
+    }
+    
+    .item.first .logo-row {
+        text-align: left;
+        padding-top: 50px;
+    }
+    
+    .item.first .index-logo {
+        max-width: 450px;
+    }
+    
+    .item.first .index-tagline {
+        margin-right: 145px;
+    }
+    
+    .arrow-down {
+        margin-top: 6%;
+    }
+    
+    .index-bottom .index-bags img {
+        width: 150%;
+        margin-left: -170px;
+    }
+    
+    .index-bottom .index-desc {
+        margin-left: -17px;
+        margin-top: 50px;
+    }
+    
+    .index-bottom .index-desc h2 {
+        font-size: 28px;
+    }
+    
+    .index-bottom .index-desc p {
+        font-size: 17px;
+        margin-top: 25px;
+    }
+    
+    .index-bottom .index-guarantee {
+        margin-bottom: 60px;
+    }
+    
+    .index-bottom .index-rockies {
+        margin-top: -40px;
+    }
+}
+
+@media (min-width: 992px) {
+    .item.first {
+    }
+    
+    .item.first .logo-row {
+        text-align: left;
+        padding-top: 70px;
+    }
+    
+    .item.first .index-logo {
+        max-width: 400px;
+        position: absolute;
+        right: 45%;
+    }
+    
+    .item.first .index-tagline {
+        position: absolute;
+        left: 60%;
+        font-size: 54px;
+        margin-top: 100px;
+    }
+    
+    .index-bottom .index-guarantee p {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        font-size: 16px;
+        line-height: 1.6em;
+    }
+    
+    .arrow-down {
+        margin-top: 400px;
+    }
+    
+    .arrow-down img {
+        max-height: 50px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .item.first {
+    }
+    
+    .item.first .logo-row {
+        text-align: left;
+        padding-top: 40px;
+    }
+    
+    .item.first .index-logo {
+        max-width: 500px;
+        position: absolute;
+        right: 45%;
+        margin-left: 150px;
+    }
+    
+    .item.first .index-tagline {
+        position: absolute;
+        left: 60%;
+        font-size: 62px;
+    }
+    
+    .arrow-down {
+        margin-top: 420px;
+    }
+    
+    .index-bottom .index-bags img {
+        width: 140%;
+        margin-left: -200px;
+    }
+    
+    .index-bottom .index-desc {
+        margin-left: -30px;
+        margin-top: 60px;
+    }
+    
+    .index-bottom .index-desc h2 {
+        font-size: 36px;
+    }
+    
+    .index-bottom .index-desc p {
+        font-size: 21px;
+        margin-top: 30px;
+    }
+    
+    .index-bottom .index-guarantee {
+        margin-bottom: 100px;
+    }
+    
+    .index-bottom .index-guarantee p {
+        font-size: 20px;   
+    }
+}
+
+@media (min-width: 1400px) {
+    .index-bottom .index-bags img {
+        width: 120%;
+        margin-left: -50px;
+    }
+    
+    .index-bottom .index-desc p {
+        width: 90%;
+        float: left;
+    }
+}
+
+@media (min-width: 1550px) {
+    .item.first .index-logo {
+        max-width: 500px;
+        position: absolute;
+        right: 52%;
+        margin-left: 150px;
+    }
+    
+    .item.first .index-tagline {
+        position: absolute;
+        left: 53%;
+        font-size: 62px;
+    }
+    
+    .index-bottom .index-bags img {
+        width: 100%;
+        margin-left: -15px;
+    }
+    
+    .index-bottom .index-desc {
+        margin-left: 0px;
+        margin-top: 60px;
+    }
+    
+    .index-bottom .index-desc p {
+        width: 90%;
+        float: left;
+    }
+    
+    .index-bottom .index-rockies {
+    }
+}
+
+@media (min-width: 1700px) {
+    .item.first .index-logo {
+        max-width: 500px;
+    }
+    
+    .item.first .index-tagline {
+        font-size: 80px;    
+    }
+    
+    .index-bottom .index-desc {
+        margin-left: -50px; 
+        margin-top: 60px;
+    }
+    
+    .index-bottom .index-desc h2 {
+        font-size: 42px;
+    }
+    
+    .index-bottom .index-desc p {
+        font-size: 24px;
+    }
+    
+    .index-bottom .index-guarantee p {
+        font-size: 24px;
+    }
+    
+    .index-bottom .index-rockies img {
+        margin-right: 100px;
+        margin-top: -30px;
+    }
+}

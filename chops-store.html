@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Chops is jerky made with premium tender and moist beef brisket, crafted with all natural ingredients using a special recipe and technique. Hailing from Georgia, we combine generations of tradition and skill when crafting our products. Come check us out and join the Chops Revolution!"/>
+    <meta name="author" content="Abhi Nayar"/>
+    <meta name="copyright" content="2016"/>
+    <meta name="robots" content="index, follow"/>
+    <meta name="robots" content="noodp, noydir"/>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="./favicon/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./favicon/favicon.ico" type="image/x-icon">
+
+    <title>Chops Jerky</title>
+
+    <!-- CSS CDN -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
+    <link href="https://cdn.rawgit.com/daneden/animate.css/v3.1.0/animate.min.css" rel="stylesheet">
+    <!-- LOCAL CSS -->
+    <link href="css/prettyPhoto.css" rel="stylesheet">
+    <link href="css/chops.css" rel="stylesheet">
+    <link href="css/chops-store.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+
+    
+    <!-- JS CDN -->
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="https://cdn.rawgit.com/matthieua/WOW/1.0.1/dist/wow.min.js"></script> 
+    <!-- LOCAL JS -->
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <!--<script src="js/jquery.localScroll.min.js"></script>-->
+    <script src="./js/chops.js"></script>
+    
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- SEO Optimization & Social -->
+    <!-- for Facebook -->          
+    <meta property="og:title" content="Chops Snacks" />
+    <meta property="og:type" content="page" />
+    <meta property="og:image" content="./images/our_products/snack-sticks/chops_pholder.jpg"/>
+    <meta property="og:url" content="www.chopsnacks.com" />
+    <meta property="og:description" content="Chops is jerky made with premium tender and moist beef brisket, crafted with all natural ingredients using a special recipe and technique. Hailing from Georgia, we combine generations of tradition and skill when crafting our products. Come check us out and join the Chops Revolution!" />
+
+    <!-- for Twitter -->          
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Chops Snacks" />
+    <meta name="twitter:description" content="Chops is jerky made with premium tender and moist beef brisket, crafted with all natural ingredients using a special recipe and technique. Hailing from Georgia, we combine generations of tradition and skill when crafting our products. Come check us out and join the Chops Revolution!" />
+    <meta name="twitter:image" content="./images/our_products/snack-sticks/chops_pholder.jpg" />
+</head>
+<body id="products-page">    
+    <div class="modal fade" id="refill-modal" tabindex="-1" role="dialog" arialabelledby="Refill Form Modal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Store Refill Request Form</h2>
+                    <p>Please fill in the following information for a refill of our delicious meat snacks.<br/><br/>For most locations, we will provide the refill in two weeks. After submitting the request, you'll receive a confirmation email that will include a specific delivery time frame. If you need a refill urgently or would like it to be delivered at a specific date, please include that information in the <b>'Additional Notes'</b> box.<br/><br/>Thank you!</p>
+                </div>
+                <div class="modal-body">
+                    <form id="refill-form" role="form" action="https://formspree.io/info@chopssnacks.com" method="post">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" class="form-control" id="contact_name" placeholder="John Doe">
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Phone Number</label>
+                            <input type="text" name="phone" class="form-control" id="contact_phone" placeholder="1-800-CHOPS-SNACKS">
+                            <input type="text" name="_gotcha" style="display:none" />
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" class="form-control" id="exampleInputEmail" name="_replyto" placeholder="Enter email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Store Mailing Address</label>
+                            <input type="text" class="form-control" id="exampleInputAddress" name="store_address" placeholder="Enter your store's mailing address">
+                            <input type="hidden" name="_next" value="#success"/>
+                            <input type="hidden" name="_subject" value="NEW Store Refill Request!" />
+                        </div>
+                        <div class="form-group">
+                            <label for="comment">Additional Notes</label>
+                            <textarea type="text" class="feedback-input form-control refill" placeholder="Comment" id="contact_comment" name="message"></textarea>
+                        </div>
+                        <button type="submit" value="Send" class="btn btn-default contact_submit black">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="success-modal" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Thank You!</h2>
+                </div>
+                <div class="modal-body">
+                    <p>Your refill request has been received and we will get back to you via e-mail shortly! Thank you for your patronage.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader hidden" style="display: none;">
+        <img src="./images/common/Preloader.gif" alt="Preloader" id="loader-gif">
+    </div>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top top-nav" role="navigation" id="top-navigation">
+            <div class="container-fluid navbar-container">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html"><img src="./images/common/top_logo.png"/></a>
+                </div>
+                <div class="navbar-right" id="top-nav-right">
+                    <ul class="nav navbar-nav">
+                        <li class="right-nav-item top-refill"><a href="#refill-modal" data-toggle="modal" id="refill-link">Store Refill Request</a></li>
+                        <li class="hidden right-nav-item top-locate"><a href="#"><img src="./images/common/locate_us.png"/></a></li>
+                        <li class="right-nav-item top-social-row-list">
+                            <div class="top-social-row-container hidden-xs">
+                                <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 text-center top-social-image">
+                                    <a href="https://www.facebook.com/chops.jerky/"><img src="./images/common/facebook.png" class="top-fb"/></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 text-center top-social-image">
+                                    <a href="https://www.instagram.com/chopssnacks/"><img src="./images/common/instagram.png" class="top-ig"/></a>
+                                </div>
+                                <div class="col-md-4 col-sm-4 col-xs-4 col-lg-4 text-center top-social-image">
+                                    <a href="https://twitter.com/chopssnacks"><img src="./images/common/twitter.png" class="top-twitter"/></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="right-nav-item hidden-xs"><a class="top-phone bold">404 620 7080</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <nav class="navbar navbar-default navbar-fixed-top navbar-lower" role="navigation" id="bottom-navigation">
+            <div class="container-fluid navbar-lower-container">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bottom-navigation-container" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="bottom-navigation-container">
+                    <ul class="nav navbar-nav navbar-nav-lower">
+                        <li class=""><a href="index.html" class="">Home<span class="sr-only">(current)</span></a></li>
+                        <li class=""><a href="our-story.html" class="">Our Story</a></li>
+                        <li class=""><a href="chops-store.html">The Chops Store</a></li>
+                        <li class=""><a href="chops-diff.html" class="">The Chops Difference</a></li>
+                        <li class=""><a href="contact-us.html">Contact Us</a></li>
+                        <li class="hidden-lg hidden-md hidden-sm"><a href="#refill-modal" data-toggle="modal">Store Refill Request</a></li>
+                    </ul>
+                </div>
+            </div>        
+        </nav>
+    </header>
+    <div class="modal fade" id="pepper-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Cracked Pepper Jerky Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/bags/cracked_pepper.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="original-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Original Jerky Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/bags/original.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="teriyaki-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Teriyaki Jerky Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/bags/teriyaki.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="sweet-spicy-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Sweet &amp; Spicy Jerky Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/bags/sweet_and_spicy.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="chilli-pepper-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Red Chili Pepper Jerky Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/bags/chilli_pepper.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="atomic-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Atomic Snack Sticks Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/snack-sticks/atomhot_peppered_og.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="cajun-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Cajun Snack Sticks Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/snack-sticks/cajun.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="hotbbq-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Hot BBQ Snack Sticks Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/snack-sticks/hotbbq.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="original-stick-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Original Snack Sticks Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/snack-sticks/atomhot_peppered_og.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="peppered-nutrition" tabindex="-1" role="dialog" arialabelledby="Success">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h2 class="refill-title bold">Peppered Snack Sticks Nutrition</h2>
+                </div>
+                <div class="modal-body nutrition">
+                    <img src="./images/our_products/nutrition/snack-sticks/atomhot_peppered_og.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <section id="chops-store">
+        <div class="container-fluid store-heading-bg">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 store-heading wow fadeIn">
+                        <img src="./images/common/logo_white.png"><h1>The CHOPS Store</h1><img src="./images/the_store/top_banner.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid jerky-comtainer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="chops-store-intro">
+                            <p>Welcome to the CHOPS store! Load up with some of the best beef jerky and lip-smacking snack sticks on the planet. No Preservatives. No Nitrites. No MSG. Just pure CHOPS goodness. Questions? <a href="contact-us.html">Ask away!</a> Enjoy shopping &amp; snacking, and don't forget- <b>#BrisketIsBetter</b></p>                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="jerky-heading">
+                            <h2>CHOPS Jerky Flavors</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12">
+                    <!-- Carousel indic. used as prod. images -->
+                    <div id="jerky-products" class="page-blocked">
+                        <div class="container jerky">
+                            <div id="jerky-list" class="carousel slide clearfix" data-ride="carousel">
+                                <!-- Indic. -->
+                                <ol class="carousel-indicators row jerky-indicators">
+                                    <!-- Cracked Pepper -->
+                                    <li data-target="#jerky-list" data-slide-to="0" class="active">
+                                        <img class="img-responsive" src="./images/our_products/black.jpg" alt="cracked-pepper-jerky">
+                                    </li>
+                                    <!-- Original -->
+                                    <li data-target="#jerky-list" data-slide-to="1">
+                                        <img class="img-responsive" src="./images/our_products/blue.jpg" alt="original-jerky">
+                                    </li>
+                                    <!-- Teriyaki -->
+                                    <li data-target="#jerky-list" data-slide-to="2">
+                                        <img class="img-responsive" src="./images/our_products/brown.jpg" alt="teriyaki-jerky">
+                                    </li>
+                                    <!-- Sweet & Spicy -->
+                                    <li data-target="#jerky-list" data-slide-to="3">
+                                        <img class="img-responsive" src="./images/our_products/purple.jpg" alt="sweet-and-spicy-jerky">
+                                    </li>
+                                    <!-- Sweet Chili Pepper -->
+                                    <li data-target="#jerky-list" data-slide-to="4">
+                                        <img class="img-responsive" src="./images/our_products/red.jpg" alt="sweet-chilli-pepper-jerky">
+                                    </li>
+                                </ol>
+                                <!-- End indic. --->
+                                <!-- Begin slides -->
+                                <div class="carousel-container">
+                                    <div class="carousel-inner">
+                                        <!-- BEGIN PEPPER FLAVOR -->
+                                        <div class="item active">
+                                            <div class="col-md-5 col-sm-12 text-center">
+                                                <div class="gallery-image">
+                                                    <img class="img-responsive" src="./images/our_products/black.jpg">
+                                                </div>
+                                                <div class="large-price hidden-sm hidden-xs">
+                                                    <p>$8.99</p>
+                                                    <div class="buy-button hidden-sm" data-embed_type="product"
+                                                     data-shop="chops-snacks.myshopify.com" 
+                                                     data-product_name="Cracked Pepper Chops Beef Jerky" data-product_handle="cracked-pepper-chops-beef-jerky" data-has_image="false" 
+                                                     data-display_size="compact" 
+                                                     data-redirect_to="cart" 
+                                                     data-buy_button_text="Add To Cart" 
+                                                     data-buy_button_out_of_stock_text="Out of Stock" 
+                                                     data-buy_button_product_unavailable_text="Unavailable" 
+                                                     data-button_background_color="ffba1b" 
+                                                     data-button_text_color="000000" 
+                                                     data-background_color="transparent"
+                                                     data-show_product_price="false"
+                                                     data-product_modal="false"
+                                                     data-product_title_color="000000" 
+                                                     data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183575238:1" target="_blank">Buy Cracked Pepper Chops Beef Jerky</a></noscript>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 product-info">
+                                                <p class="price hidden-md hidden-lg">$8.99</p>
+                                                <h2>CHOPS Cracked Pepper Jerky</h2>
+                                                <p>Every pepper lover knows that all-natural fresh cracked pepper is the only way to go. This is why we created this flavor, using only the best ingredients, with no compromise on quality. This flavor is for those who want that extra “umph” in their jerky without setting their mouth on fire. Come one, come all to try our new Cracked Pepper flavor of 100% all-natural, tender and moist beef brisket.</p>
+                                                <div class="buy-row">
+                                                    <div class="buy-info">
+                                                        Net Weight: 2.8 oz
+                                                    </div>
+                                                    <div class="buy-button hidden-md hidden-lg" data-embed_type="product"
+                                                     data-shop="chops-snacks.myshopify.com" 
+                                                     data-product_name="Cracked Pepper Chops Beef Jerky" data-product_handle="cracked-pepper-chops-beef-jerky" data-has_image="false" 
+                                                     data-display_size="compact" 
+                                                     data-redirect_to="cart" 
+                                                     data-buy_button_text="Add To Cart" 
+                                                     data-buy_button_out_of_stock_text="Out of Stock" 
+                                                     data-buy_button_product_unavailable_text="Unavailable" 
+                                                     data-button_background_color="ffba1b" 
+                                                     data-button_text_color="000000" 
+                                                     data-background_color="transparent"
+                                                     data-show_product_price="false"
+                                                     data-product_modal="false"
+                                                     data-product_title_color="000000" 
+                                                     data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183575238:1" target="_blank">Buy Cracked Pepper Chops Beef Jerky</a></noscript>               
+                                                    <a href="#pepper-nutrition" data-toggle="modal" class="nutrition-link">Nutrition Info.</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END PEPPER FLAVOR -->
+                                        <!-- BEGIN ORIGINAL FLAVOR -->
+                                        <div class="item">
+                                            <div class="col-md-5 col-sm-12 text-center">
+                                                <div class="gallery-image">
+                                                    <img class="img-responsive" src="./images/our_products/blue.jpg">
+                                                </div>
+                                                <div class="large-price hidden-sm hidden-xs">
+                                                    <p>$8.99</p>
+                                                    <div class="buy-button hidden-sm" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Original Chops Beef Jerky" data-product_handle="original-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19502905414:1" target="_blank">Buy Original Chops Beef Jerky</a></noscript>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 product-info">
+                                                <p class="price hidden-md hidden-lg">$8.99</p>
+                                                <h2>CHOPS Original Jerky</h2>
+                                                <p>It’s the original. The older brother. The granddaddy of them all. Chapter One. No matter how you phrase it, we all have some sort of nostalgia for all things original. When we crafted this flavor, we put all of our jerky knowledge together to make something special for you, the consumers. Like all of our other flavors, it only incorporates 100% all-natural tender and moist brisket and spices.</p>
+                                                <div class="buy-row">
+                                                    <div class="buy-info">
+                                                        Net Weight: 2.8 oz
+                                                    </div>
+                                                    <div class="buy-button hidden-md hidden-lg" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Original Chops Beef Jerky" data-product_handle="original-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19502905414:1" target="_blank">Buy Original Chops Beef Jerky</a></noscript>               
+                                                    <a href="#original-nutrition" data-toggle="modal" class="nutrition-link">Nutrition Info.</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END ORIGINAL FLAVOR -->
+                                        <!-- BEGIN TERIYAKI FLAVOR -->
+                                        <div class="item">
+                                            <div class="col-md-5 col-sm-12 text-center">
+                                                <div class="gallery-image">
+                                                    <img class="img-responsive" src="./images/our_products/brown.jpg">
+                                                </div>
+                                                <div class="large-price hidden-sm hidden-xs">
+                                                    <p>$8.99</p>
+                                                    <div class="buy-button hidden-sm" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Teriyaki Chops Beef Jerky" data-product_handle="teriyaki-chops-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-background_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19695457158:1" target="_blank">Buy Teriyaki Chops Beef Jerky</a></noscript>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 product-info">
+                                                <p class="price hidden-md hidden-lg">$8.99</p>
+                                                <h2>CHOPS Teriyaki Jerky</h2>
+                                                <p>Named after a legendary Japanese cooking technique combining soy sauce and sugar to create a heavenly glaze on meat, our Teriyaki jerky lives up to the expectations of the most picky Japanese chefs. Crafted from tender and moist brisket, our Teriyaki flavor adds hints of ginger and black pepper to make you salivate quicker than a hound dog at dinner time.</p>
+                                                <div class="buy-row">
+                                                    <div class="buy-info">
+                                                        Net Weight: 2.8 oz
+                                                    </div>
+                                                    <div class="buy-button hidden-md hidden-lg" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Teriyaki Chops Beef Jerky" data-product_handle="teriyaki-chops-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-background_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19695457158:1" target="_blank">Buy Teriyaki Chops Beef Jerky</a></noscript>               
+                                                    <a href="#teriyaki-nutrition" data-toggle="modal" class="nutrition-link">Nutrition Info.</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END TERIYAKI FLAVOR -->
+                                        <!-- BEGIN SWEET AND SPICY FLAVOR -->
+                                        <div class="item">
+                                            <div class="col-md-5 col-sm-12 text-center">
+                                                <div class="gallery-image">
+                                                    <img class="img-responsive" src="./images/our_products/purple.jpg">
+                                                </div>
+                                                <div class="large-price hidden-sm hidden-xs">
+                                                    <p>$8.99</p>
+                                                    <div class="buy-button hidden-sm" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Sweet &amp; Spicy Chops Beef Jerky" data-product_handle="sweet-spicy-chops-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-background_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19700840006:1" target="_blank">Buy Sweet &amp; Spicy Chops Beef Jerky</a></noscript>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 product-info">
+                                                <p class="price hidden-md hidden-lg">$8.99</p>
+                                                <h2>CHOPS Sweet &amp; Spicy Jerky</h2>
+                                                <p>Our Sweet and Spicy flavor combines the savory goodness of sweet spices with a kickin’ spicy addition that makes you feel bad-to-the-bone. As always, we use 100% all-natural ingredients, including tender and moist beef brisket crafted with high-quality spices.</p>
+                                                <div class="buy-row">
+                                                    <div class="buy-info">
+                                                        Net Weight: 2.8 oz
+                                                    </div>
+                                                    <div class="buy-button hidden-md hidden-lg" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Sweet &amp; Spicy Chops Beef Jerky" data-product_handle="sweet-spicy-chops-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-background_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19700840006:1" target="_blank">Buy Sweet &amp; Spicy Chops Beef Jerky</a></noscript>             
+                                                    <a href="#sweet-spicy-nutrition" data-toggle="modal" class="nutrition-link">Nutrition Info.</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END SWEET AND SPICY FLAVOR -->
+                                        <!-- BEGIN RED CHILI FLAVOR -->
+                                        <div class="item">
+                                            <div class="col-md-5 col-sm-12 text-center">
+                                                <div class="gallery-image">
+                                                    <img class="img-responsive" src="./images/our_products/red.jpg">
+                                                </div>
+                                                <div class="large-price hidden-sm hidden-xs">
+                                                    <p>$8.99</p>
+                                                    <div class="buy-button hidden-sm" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Red Chili Pepper Chops Beef Jerky" data-product_handle="red-chili-pepper-chops-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-background_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19700765126:1" target="_blank">Buy Red Chili Pepper Chops Beef Jerky</a></noscript>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-12 product-info">
+                                                <p class="price hidden-md hidden-lg">$8.99</p>
+                                                <h2>CHOPS Red Chili Pepper Jerky</h2>
+                                                <p>Do you love your food extra spicy? If so, Red Chili Pepper is the flavor for you. Our recipe, unlike that of other companies, gives you a strong kick -  but we still focus on the actual taste and flavor instead of heaping in so much hot spice that you can’t taste the jerky. Our unique balance in spice and flavor will leave you coming back for more again and again.</p>
+                                                <div class="buy-row">
+                                                    <div class="buy-info">
+                                                        Net Weight: 2.8 oz
+                                                    </div>
+                                                    <div class="buy-button hidden-md hidden-lg" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Red Chili Pepper Chops Beef Jerky" data-product_handle="red-chili-pepper-chops-beef-jerky" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-background_color="ffffff" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                                    <script type="text/javascript">
+                                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                                    </script>
+                                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19700765126:1" target="_blank">Buy Red Chili Pepper Chops Beef Jerky</a></noscript>               
+                                                    <a href="#chilli-pepper-nutrition" data-toggle="modal" class="nutrition-link">Nutrition Info.</a>    
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- END RED CHILI FLAVOR -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid snack-stick-container">
+            <!-- Chop Snack Sticks Gallery -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                        <div class="jerky-heading snack-stick-heading">
+                            <h2>CHOPS Snack Stick Flavors</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- BEGIN SNACK STICK -->
+                    <div id="first" class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 snack-stick">
+                        <div class="row">
+                            <div class="col-sm-4 image-info">
+                                <img src="./images/our_products/snack-sticks/atomic_hot.jpg">
+                                <div class="price-buy">
+                                    <p class="price">$12.99</p>
+                                    <div class="snack-buy-button" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Atomic Hot Chops All-Natural Snack Sticks (Pack of 10)" data-product_handle="atomic-hot-chops-all-natural-snack-sticks-pack-of-10" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                    <script type="text/javascript">
+                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                    </script>
+                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/19700921926:1" target="_blank">Buy Atomic Hot Chops All-Natural Snack Sticks (Pack of 10)</a></noscript>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 snack-stick-desc">
+                                <h2>Atomic Hot Snack Sticks</h2>
+                                <p>The name speaks for itself. Atomic Hot is a flavor that has as much force as an ICB missile, yet it always keeps you coming back for another bite. Atomic Hot is not for the faint of heart- Consider yourself warned. <b>(Pack of 10)</b></p>
+                                <div class="other-info">
+                                    <a href="#atomic-nutrition" data-toggle="modal">Nutrition Info.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SNACK STICK -->
+                    <!-- BEGIN SNACK STICK -->
+                    <div id="second" class="col-lg-6 col-lg-offset-0 col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 snack-stick">
+                        <div class="row">
+                            <div class="col-sm-4 image-info">
+                                <img src="./images/our_products/snack-sticks/cajun.jpg">
+                                <div class="price-buy">
+                                    <p class="price">$12.99</p>
+                                    <div class="snack-buy-button" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Cajun Chops All-Natural Snack Sticks (Pack of 10)" data-product_handle="cajun-chops-all-natural-snack-sticks-pack-of-10" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                    <script type="text/javascript">
+                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                    </script>
+                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183602438:1" target="_blank">Buy Cajun Chops All-Natural Snack Sticks (Pack of 10)</a></noscript>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 snack-stick-desc">
+                                <h2>Cajun Snack Sticks</h2>
+                                <p>The people of the bayou have a unique way of life, and many would argue that they also have a unique way of cooking with special blends of Cajun spices. Our Cajun flavor will make you feel like getting on an airboat and going gator hunting in the bayou. <b>(Pack of 10)</b></p>
+                                <div class="other-info">
+                                    <a href="#cajun-nutrition" data-toggle="modal">Nutrition Info.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SNACK STICK -->
+                </div>
+                <div class="row">
+                    <!-- BEGIN SNACK STICK -->
+                    <div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 snack-stick">
+                        <div class="row">
+                            <div class="col-sm-4 image-info">
+                                <img src="./images/our_products/snack-sticks/hot_bbq.jpg">
+                                <div class="price-buy">
+                                    <p class="price">$12.99</p>
+                                    <div class="snack-buy-button" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Hot BBQ Chops All-Natural Snack Sticks (Pack of 10)" data-product_handle="hot-bbq-chops-all-natural-snack-sticks-pack-of-10hot-bbq" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                    <script type="text/javascript">
+                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                    </script>
+                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183611206:1" target="_blank">Buy Hot BBQ Chops All-Natural Snack Sticks (Pack of 10)</a></noscript>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 snack-stick-desc">
+                                <h2>Hot BBQ Snack Sticks</h2>
+                                <p>What American doesn’t like a bit of a kick in their barbeque sauce? Whether your favorite barbeque spot is your backyard, the hills of Carolina, the rolling plains of Kansas, or the soulful streets of Memphis, our Hot BBQ flavor will make you feel right at home. <b>(Pack of 10)</b></p>
+                                <div class="other-info">
+                                    <a href="#hotbbq-nutrition" data-toggle="modal">Nutrition Info.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SNACK STICK -->
+                    <!-- BEGIN SNACK STICK -->
+                    <div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 snack-stick">
+                        <div class="row">
+                            <div class="col-sm-4 image-info">
+                                <img src="./images/our_products/snack-sticks/original.jpg">
+                                <div class="price-buy">
+                                    <p class="price">$12.99</p>
+                                    <div class="snack-buy-button" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Original Chops All-Natural Snack Sticks (Pack of 10)" data-product_handle="original-chops-all-natural-snack-sticks-pack-of-10" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                    <script type="text/javascript">
+                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                    </script>
+                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183620294:1" target="_blank">Buy Original Chops All-Natural Snack Sticks (Pack of 10)</a></noscript>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 snack-stick-desc">
+                                <h2>Original Snack Sticks</h2>
+                                <p>This is the flavor that started it all. The genesis of our snack stick story, our original flavor is comprised, as always, of a unique blend of all-natural meat and spices and contains no MSG. After you taste this, you’ll know what the American Dream tastes like. <b>(Pack of 10)</b></p>
+                                <div class="other-info">
+                                    <a href="#original-stick-nutrition" data-toggle="modal">Nutrition Info.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SNACK STICK -->
+                </div>
+                <div class="row">
+                    <!-- BEGIN SNACK STICK -->
+                    <div class="col-lg-6 col-lg-offset-0 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 snack-stick">
+                        <div class="row">
+                            <div class="col-sm-4 image-info">
+                                <img src="./images/our_products/snack-sticks/peppered.jpg">
+                                <div class="price-buy">
+                                    <p class="price">$12.99</p>
+                                    <div class="snack-buy-button" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Peppered Chops All-Natural Snack Sticks (Pack of 10)" data-product_handle="peppered-chops-all-natural-snack-sticks-pack-of-10" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                    <script type="text/javascript">
+                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                    </script>
+                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183628422:1" target="_blank">Buy Peppered Chops All-Natural Snack Sticks (Pack of 10)</a></noscript>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 snack-stick-desc">
+                                <h2>Peppered Snack Sticks</h2>
+                                <p>Our Peppered flavor is for all of our consumers who like some added pepper to their food. If you like to add pepper to all sorts of foods, this flavor is for you. Imagine our original flavored snack stick, but in a leather jacket with a tad more kick. <b>(Pack of 10)</b></p>
+                                <div class="other-info">
+                                    <a href="#peppered-nutrition" data-toggle="modal">Nutrition Info.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SNACK STICK -->
+                    <!-- BEGIN SNACK STICK -->
+                    <div class="col-lg-6 col-lg-offset-0 hidden-md hidden-sm snack-stick">
+                        <div class="row">
+                            <div class="col-sm-4 image-info">
+                                <img src="./images/our_products/snack-sticks/peppered.jpg">
+                                <div class="price-buy">
+                                    <p class="price">$12.99</p>
+                                    <div class="snack-buy-button" data-embed_type="product" data-shop="chops-snacks.myshopify.com" data-product_name="Peppered Chops All-Natural Snack Sticks (Pack of 10)" data-product_handle="peppered-chops-all-natural-snack-sticks-pack-of-10" data-has_image="false" data-display_size="compact" data-redirect_to="cart" data-buy_button_text="Add To Cart" data-buy_button_out_of_stock_text="Out of Stock" data-buy_button_product_unavailable_text="Unavailable" data-button_background_color="ffba1b" data-button_text_color="000000" data-product_modal="false" data-product_title_color="000000" data-next_page_button_text="Next page"></div>
+                                    <script type="text/javascript">
+                                    document.getElementById('ShopifyEmbedScript') || document.write('<script type="text/javascript" src="https://widgets.shopifyapps.com/assets/widgets/embed/client.js" id="ShopifyEmbedScript"><\/script>');
+                                    </script>
+                                    <noscript><a href="https://chops-snacks.myshopify.com/cart/20183628422:1" target="_blank">Buy Peppered Chops All-Natural Snack Sticks (Pack of 10)</a></noscript>
+                                </div>
+                            </div>
+                            <div class="col-sm-8 snack-stick-desc">
+                                <h2>Peppered Snack Sticks</h2>
+                                <p>Our Peppered flavor is for all of our consumers who like some added pepper to their food. If you like to add pepper to all sorts of foods, this flavor is for you. Imagine our original flavored snack stick, but in a leather jacket with a tad more kick. <b>(Pack of 10)</b></p>
+                                <div class="other-info">
+                                    <a href="#peppered-nutrition" data-toggle="modal">Nutrition Info.</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END SNACK STICK -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid footer-bg">
+            <div class="footer-container">
+                <div class="row footer-row">
+                    <div class="col-md-8 col-sm-12 col-xs-12 footer-left">
+                        <div class="footer-left-row row">
+                            <div class="col-md-1 col-sm-1 col-xs-12 footer-icon-col">
+                                <a href="chops-store.html" class="footer-icon-link"><img src="./images/common/cart_icon.png" class="footer-icon"/></a>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-12 footer-left-column">
+                                <a class="footer-left-link shifted" href="http://shop.chopssnacks.com/">Grab some <span class="bold">CHOPS Jerky</span> today.</a>
+                            </div>
+                        </div>
+                        <div class="footer-left-row row">
+                            <!--<div class="col-md-1 col-sm-1 col-xs-12 footer-icon-col">
+                                <a href="index.html" class="footer-icon-link"><img src="./images/common/locate_us_maponly.png" class="footer-icon"/></a>
+                            </div>
+                            <div class="col-md-11 col-sm-11 col-xs-12 footer-left-column">
+                                <a class="footer-left-link shifted" href="index.html">Find some <span class="bold">CHOPS Jerky</span> near you.</a>
+                            </div>-->
+                        </div>
+                        <div class="footer-left-row row">
+                            <div class="col-md-4 col-sm-4 col-xs-12">
+                                <div class="row text-center">
+                                    <div class="col-md-4 col-sm-4 col-xs-4 footer-social"><a href="https://www.facebook.com/chops.jerky/" class="footer-social-link"><img src="./images/common/facebook.png" class="footer-social-image"/></a></div>
+                                    <div class="footer-social col-md-4 col-sm-4 col-xs-4"><a href="https://twitter.com/chopssnacks" class="footer-social-link"><img src="./images/common/twitter.png" class="footer-social-image"/></a></div>
+                                    <div class="footer-social col-md-4 col-sm-4 col-xs-4"><a href="https://www.instagram.com/chopssnacks/" class="footer-social-link"><img src="./images/common/instagram.png" class="footer-social-image"/></a></div>
+                                </div>
+                            </div>
+                            <div class="col-md-8 col-sm-8 col-xs-12 footer-left-column">
+                                <p class="footer-left-text">Follow us us on social media.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-sm-offset-8 col-xs-12 footer-right text-right">
+                        <div class="footer-right-text1-container">
+                            <p class="footer-right-text1">
+                                We're always here to help:<br/>
+                                info@chopssnacks.com<br/>
+                                404-620-7080
+                            </p>
+                        </div>
+                        <div class="footer-right-text2-container">
+                            <p class="footer-right-text2">
+                                <span class="hidden-sm">Copyright </span>© 2016 Chops Snacks, LLC.<br/>
+                                All rights reserved.<br/>
+                                <span class="credits">Designed by Abhi Nayar</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    </body>
+</html>
