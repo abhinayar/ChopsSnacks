@@ -68,4 +68,17 @@ jQuery(document).ready(function($) {
         $('#success-modal').modal('show');
     }
     
+    /*
+    function setTeamImageHeight() {
+        for (var i=0; i<4; i++) {
+            var bio_text_height = $(".the-team-bio").eq(i).height();
+            $(".the-team-image img").eq(i).height(bio_text_height);
+        }
+        setTeamImageHeight();
+    };
+    
+    $(window).resize(function(){
+       setTeamImageHeight(); 
+    });
+    */
 });
