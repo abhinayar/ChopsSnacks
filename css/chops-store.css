@@ -3,6 +3,112 @@
     text-align: center;
 }
 
+.store-heading-bg {
+    background: #031b2c;
+}
+
+.store-heading h1 {
+    color: #fff;
+    font-family: nexabold;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.store-heading img, .store-heading h1 {
+    display: inline-block;
+}
+
+.store-heading img:first-of-type {
+    max-width: 100px;
+    margin-top: -25px;
+}
+   
+.store-heading img:nth-of-type(2) {
+    display: none;
+}
+
+.jerky-comtainer {
+    background-color: #1b1919;
+}
+
+.chops-store-intro p {
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.8em;
+    margin-top: 40px;
+}
+    
+.snack-stick-container {
+    background-color: #1b1919;
+    padding-bottom: 100px;
+}
+
+.jerky-heading.snack-stick-heading {
+    margin-top: 50px;
+    color: #fff;
+}
+    
+.snack-stick {
+    background-color: #031b2c;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #fff;
+    padding-bottom: 15px;
+    min-height: 300px;
+}
+
+#first.snack-stick {
+    margin-top: 25px;
+}
+
+.snack-stick-desc h2 {
+    font-family: nexabold;
+    font-size: 30px;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.snack-stick-desc p {
+    font-size: 16px;
+    margin-top: 15px;
+    line-height: 1.6em;
+    text-align: center;
+}
+
+.image-info img {
+    max-width: 95%;
+}
+
+.image-info {
+    margin: 0 auto;
+    margin-top: 18px;
+    text-align: center;
+}
+
+.price-buy p {
+    text-align: center;
+    font-size: 24px;
+    font-family: nexalight;
+    margin-top: 15px;
+}
+
+.price-buy .snack-buy-button {
+    text-align: center;
+    margin-left: 8em;
+    margin-top: -10px;
+}
+
+.other-info {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.other-info a {
+    margin-top: 20px;
+}
+
+
 /* CHOPS STORE CSS */
 @media (min-width: 768px) {
     .store-heading-bg {
@@ -31,11 +137,12 @@
         max-width: 220px;
         margin-top: 40px;
         float: right;
+        display: inline-block;
     }
     
     .chops-store-intro p {
         color: #fff;
-        font-size: 16px;
+        font-size: 18px;
         line-height: 1.8em;
         margin-top: 40px;
     }
@@ -101,7 +208,7 @@
         overflow: hidden;
         text-align: center;
         cursor: pointer;
-        border: 0.90em solid #fff;
+        border: 0.90em solid transparent;
         margin-top: 1px;
         -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
         box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
@@ -206,12 +313,14 @@
         font-family: nexabold;
         font-size: 30px;
         margin-top: 18px;
+        text-align: left;
     }
     
     .snack-stick-desc p {
         font-size: 16px;
         margin-top: 15px;
         line-height: 1.6em;
+        text-align: left;
     }
     
     .image-info img {
@@ -220,6 +329,7 @@
     
     .image-info {
         margin-top: 18px;
+        text-align: left;
     }
     
     .price-buy p {
@@ -243,6 +353,11 @@
         margin-top: 250px;
         right: 0;
         margin-right: 40px;
+    }
+    
+    .other-info {
+        text-align: left;
+        margin-bottom: 0px;
     }
 }
 
