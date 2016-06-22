@@ -81,4 +81,10 @@ jQuery(document).ready(function($) {
        setTeamImageHeight(); 
     });
     */
+    
+    $('#indexCarousel').carousel({
+        interval: 3000
+    });
+
+    $('#indexCarousel').carousel('cycle');
 });
