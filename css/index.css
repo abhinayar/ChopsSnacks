@@ -62,7 +62,7 @@ p.index-tagline {
 }
 
 .carousel-control {
-    margin-top: 60%;
+    padding-top: 60%;
 }
 
 .index-bottom {
@@ -114,7 +114,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 50%;
+        padding-top: 50%;
     }
 }
 
@@ -131,7 +131,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 35%;
+        padding-top: 35%;
     }
     
     .index-bags img {
@@ -203,7 +203,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 25%;
+        padding-top: 25%;
     }
     
     .index-bags img {
@@ -268,7 +268,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 25%;
+        padding-top: 25%;
     }
     
     .arrow-down {
@@ -361,7 +361,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 25%;
+        padding-top: 25%;
     }
     
     .arrow-down {
@@ -373,7 +373,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 20%;
+        padding-top: 20%;
     }
     
     .index-bags img {
@@ -429,11 +429,7 @@ p.index-tagline {
         margin-top: 120px;
         margin-left: 75px;
     }
-    
-    .carousel-control {
-        margin-top: 25%;
-    }
-    
+
     .arrow-down {
         margin-top: 120px;
     }
@@ -443,7 +439,7 @@ p.index-tagline {
     }
     
     .carousel-control {
-        margin-top: 20%;
+        padding-top: 20%;
     }
     
     .index-bags img {
