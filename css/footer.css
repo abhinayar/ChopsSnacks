@@ -29,12 +29,8 @@ footer a, footer a:hover {
     margin-top: 30px;
 }
 
-.footer-left-row {
+.footer-left-row:nth-of-type(2) {
     margin-top: 10px;
-}
-
-.footer-left-row:first-of-type {
-    margin-top: -15px;
 }
 
 .footer-left-column {
@@ -60,44 +56,29 @@ footer a, footer a:hover {
         text-align: right;
         display: inline-block;
         margin-top: -115px;
-    } 
-    
-    .footer-left-column p {
-        float: left;
-        margin-top: 5px;
-        margin-left: -15px;
     }
     
-    .footer-left-column a {
-        float: left;
-        margin-left: 0px;
-        margin-top: 5px;
+    .footer-icon-col {
+        text-align: right;
     }
     
-    .footer-left-row:first-of-type {
-        margin-left: 0px;
+    .footer-left-column {
+        text-align: left;
+        margin-top: 12px;
+    }
+    
+    .footer-social {
+        text-align: right;
+    }
+    
+    .footer-left-text {
+        margin-top: 5px;
     }
 }
 
 @media (min-width: 992px) {
     footer .container {
         min-width: 0px;
-    }
-    
-    .footer-left-row:first-of-type {
-        margin-left: 5px;
-    }
-    
-     .footer-left-column p {
-        float: left;
-        margin-left: 0px;
-        margin-top: 5px;
-    }
-    
-    .footer-left-column a {
-        margin-top: 5px;
-        float: left;
-        margin-left: 15px;
     }
     
     .footer-right {
