@@ -53,7 +53,7 @@ jQuery(document).ready(function($) {
     
     // Services Carousel delay
 	$('#productList, .carousel').carousel({
-        interval: 20000 // set value like 5000 for making auto and increase or decrease for delay
+        interval: 5000 // set value like 5000 for making auto and increase or decrease for delay
     });
     
     $(".navbar-nav li a").click(function (event) {
