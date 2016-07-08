@@ -185,8 +185,8 @@
         width: 19%;
         height: auto;
         margin: 0.5%;
-        border: none;
-        border-radius: 0;
+        border: 0px;
+        border-radius: 6px;
         text-align: center;
         color: #fff;
         font-weight: 400;
@@ -196,6 +196,7 @@
         background-color: #fff;
         padding: 0.5em;
         border: 1px solid rgba(0,0,0,0.1);
+        border-radius: 5px;
     }
     
     #jerky-list ol li:hover img {
@@ -216,10 +217,10 @@
         overflow: hidden;
         text-align: center;
         cursor: pointer;
-        border: 0.90em solid transparent;
+        border: 0.90em solid #ffbb1c;
+        background-color: #ffbb1c;
+        border-radius: 0.90em;
         margin-top: 1px;
-        -webkit-box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
-        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.1);
     }
 
     .gallery-image img {
@@ -311,6 +312,7 @@
         color: #fff;
         padding-bottom: 15px;
         min-height: 300px;
+        border-radius: 5px;
     }
     
     #first.snack-stick {
@@ -333,6 +335,7 @@
     
     .image-info img {
         max-width: 100%;
+        border-radius: 5px;
     }
     
     .image-info {
