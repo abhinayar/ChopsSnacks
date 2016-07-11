@@ -70,8 +70,8 @@ p.index-tagline {
 }
 
 .index-bags img {
-    width: 150%;
-    margin-left: -6%;
+    width: 110%;
+    margin-left: -5%;
     margin-top: 20px;
 }
 
@@ -83,6 +83,7 @@ p.index-tagline {
     text-transform: uppercase;
     font-size: 28px;
     color: #000;
+    margin-top: -10px
 }
 
 .index-desc p {
@@ -135,7 +136,7 @@ p.index-tagline {
     }
     
     .index-bags img {
-        width: 140%;
+        width: 110%;
         margin-left: -5%;
         margin-top: 20px;
     }
@@ -155,9 +156,6 @@ p.index-tagline {
 }
 
 @media(min-width: 768px) {
-    .index-bags img {
-        margin-left: -25%;
-    }
     
     .index-desc {
         text-align: left;
@@ -166,12 +164,23 @@ p.index-tagline {
     
     .index-desc h2 {
         font-size: 21px;
+        margin-top: 15px;
     }
     
     .index-desc p {
-        max-width: 95%;
+        max-width: 90%;
         margin: 0;
         font-size: 14px;
+    }
+    
+    .index-desc .shifted {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    
+    .index-bags img {
+        width: 125%;
+        margin-left: -12%;
     }
     
     .index-guarantee {
@@ -207,7 +216,7 @@ p.index-tagline {
     }
     
     .index-bags img {
-        margin-left: -25%;
+        margin-left: -10%;
     }
     
     .index-desc {
@@ -217,6 +226,7 @@ p.index-tagline {
     
     .index-desc h2 {
         font-size: 26px;
+        margin-top: 25px;
     }
     
     .index-desc p {
@@ -243,6 +253,7 @@ p.index-tagline {
     
     .index-rockies img {
         max-width: 270px;
+        margin-top: 15px;
     }
 }
 
@@ -280,7 +291,7 @@ p.index-tagline {
     }
     
     .index-bags img {
-        margin-left: -25%;
+        margin-left: -11%;
     }
     
     .index-desc {
@@ -289,13 +300,17 @@ p.index-tagline {
     }
     
     .index-desc h2 {
-        font-size: 32px;
+        font-size: 28px;
     }
     
     .index-desc p {
         max-width: 95%;
         margin: 0;
         font-size: 17px;
+    }
+    
+    .index-desc .shifted {
+        margin-top: 15px;
     }
     
     .index-guarantee {
@@ -313,7 +328,7 @@ p.index-tagline {
     
     .index-rockies {
         text-align: center;
-        margin-top: -60px;
+        margin-top: -45px;
     }
     
     .index-rockies img {
@@ -323,7 +338,7 @@ p.index-tagline {
 
 @media (min-width: 1100px) {
     .index-desc {
-        margin-top: 50px;    
+        margin-top: 50px;  
     }
     
     .index-desc p {
