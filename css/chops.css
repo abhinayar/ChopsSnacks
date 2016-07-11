@@ -450,6 +450,20 @@ nav, navbar {
     margin-top: 65px;
 }
 
+.our-story-top p {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .our-story-top p {
+        text-align: left;
+    }
+    
+    .our-story-top p.text-right {
+        text-align: right;
+    }
+}
+
 .the-team-bg {
     padding-top: 40px;
     background-color: #031b2c;
@@ -712,6 +726,20 @@ nav, navbar {
     margin-top: 40px;
     min-width: 100%;
     
+}
+
+#chops_diff p {
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #chops_diff p {
+        text-align: inherit;
+    }
+    
+    #chops_diff p.text-right {
+        text-align: right;
+    }
 }
 
 /*** OUR PRODUCTS ***/
